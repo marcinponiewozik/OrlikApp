@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.restclient" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <service android:name=".Services.KomentarzService" />
+        <service
+            android:name=".Services.WiadomosciService">
+            </service>
+
+        <service android:name=".Services.RozmowaService"/>
+
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:label="Orlik App"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.Logowanie"
+            android:label="@string/title_activity_logowanie"
+            android:parentActivityName=".Activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".Activity.Rejestracja"
+            android:label="@string/title_activity_rejestracja"
+            android:parentActivityName=".Activity.Logowanie"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Logowanie" />
+        </activity>
+        <activity
+            android:name=".Activity.Aktualnosci"
+            android:label="@string/title_activity_aktualnosci"
+            android:parentActivityName=".Activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".Activity.Artykul"
+            android:label="@string/title_activity_artykul"
+            android:parentActivityName=".Activity.Aktualnosci"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.restclient.Activity.Aktualnosci" />
+        </activity>
+        <activity
+            android:name=".Activity.KomentarzeArtykul"
+            android:label="@string/title_activity_komentarze_artykul"
+            android:parentActivityName=".Activity.Artykul"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.restclient.Activity.Artykul" />
+        </activity>
+        <activity
+            android:name=".Activity.Zagraj"
+            android:label="@string/title_activity_gra"
+            android:parentActivityName=".Activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.restclient.Activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".Activity.KomentarzeGra"
+            android:label="@string/title_activity_komentarze_gra"
+            android:parentActivityName=".Activity.Zagraj"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.restclient.Activity.Zagraj" />
+        </activity>
+        <activity
+            android:name=".Activity.Ustawienia"
+            android:label="@string/title_activity_ustawienia"
+            android:parentActivityName=".Activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.restclient.Activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".Activity.ZmianaHasla"
+            android:label="@string/title_activity_zmiana_hasla"
+            android:parentActivityName=".Activity.Ustawienia"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.restclient.Activity.Ustawienia" />
+        </activity>
+        <activity
+            android:name=".Activity.ZmianaEmail"
+            android:label="@string/title_activity_zmiana_email"
+            android:parentActivityName=".Activity.Ustawienia"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.restclient.Activity.Ustawienia" />
+        </activity>
+
+        <activity
+            android:name=".Activity.ListaGraczy"
+            android:label="@string/title_activity_lista_graczy"
+            android:parentActivityName=".Activity.Zagraj"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.restclient.Activity.Zagraj" />
+        </activity>
+        <activity
+            android:name=".Activity.Wiadomosci"
+            android:label="@string/title_activity_wiadomosci"
+            android:parentActivityName=".Activity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.restclient.Activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".Activity.Rozmowa"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="@string/title_activity_roamowa"
+            android:parentActivityName=".Activity.Wiadomosci"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.restclient.Activity.Wiadomosci" />
+        </activity>
+    </application>
+
+</manifest>

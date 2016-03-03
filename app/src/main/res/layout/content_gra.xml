@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" tools:showIn="@layout/activity_gra"
+    tools:context="com.example.restclient.Activity.Zagraj">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/tvData"
+        android:textColor="#10124e"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBede"
+        android:onClick="btnBede"
+        android:background="@drawable/button_bede"
+        android:drawableLeft="@drawable/icon_ok"
+        android:text="0"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:textColor="@drawable/text_color_btn_ok"
+        android:layout_below="@+id/tvData"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp"
+        android:layout_toLeftOf="@+id/button23"
+        android:layout_toStartOf="@+id/button23"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMoze"
+        android:onClick="btnMoze"
+        android:background="@drawable/button_niezdecydowany"
+        android:drawableLeft="@drawable/icon_cancelb"
+        android:text="0"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:textColor="@drawable/text_color_btn_cancelb"
+        android:enabled="true"
+        android:layout_below="@+id/btnBede"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/button23"
+        android:layout_toStartOf="@+id/button23"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNie"
+        android:onClick="btnNie"
+        android:background="@drawable/button_nieobecny"
+        android:drawableLeft="@drawable/icon_cancel"
+        android:text="0"
+        android:textColor="@drawable/text_color_btn_cancel"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/btnMoze"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/button24"
+        android:layout_toStartOf="@+id/button24"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button13"
+        android:onClick="komentarze"
+        android:background="@drawable/button_komentarze"
+        android:drawableLeft="@drawable/icon_komentarze"
+        android:text="Komentarze"
+        android:textColor="@drawable/text_color_btn_komentarze"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/btnNie"
+        android:layout_alignRight="@+id/button25"
+        android:layout_alignEnd="@+id/button25" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button23"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/icon_users_ok"
+        android:paddingLeft="20dp"
+        android:background="@drawable/button_users_ok"
+        android:layout_alignTop="@+id/btnBede"
+        android:layout_alignRight="@+id/button13"
+        android:layout_alignEnd="@+id/button13"
+        android:layout_alignBottom="@+id/btnBede"
+        android:onClick="listaChetnych" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button24"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/icon_users_niezdecydowani"
+        android:paddingLeft="20dp"
+        android:background="@drawable/button_users_niezdecydowani"
+        android:layout_alignBottom="@+id/btnMoze"
+        android:layout_toRightOf="@+id/btnBede"
+        android:layout_toEndOf="@+id/btnBede"
+        android:layout_alignTop="@+id/btnMoze"
+        android:nestedScrollingEnabled="false"
+        android:onClick="listaNiezdecydowanych" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button25"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/icon_users_nieobecni"
+        android:paddingLeft="20dp"
+        android:background="@drawable/button_users_nieobecni"
+        android:layout_below="@+id/btnMoze"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/btnNie"
+        android:onClick="listaNieobecnych" />
+
+</RelativeLayout>

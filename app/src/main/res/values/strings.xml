@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Orlik App</string>
+    <string name="title_activity_logowanie">Logowanie</string>
+    <string name="title_activity_rejestracja">Rejestracja</string>
+    <string name="title_activity_aktualnosci">Aktualnosci</string>
+    <string name="title_activity_artykul">Artykul</string>
+    <string name="title_activity_komentarze_artykul">Komentarze</string>
+    <string name="title_activity_gra">Gra</string>
+    <string name="title_activity_komentarze_gra">Komentarze</string>
+    <string name="title_activity_ustawienia">Ustawienia</string>
+    <string name="title_activity_zmiana_hasla">Zmiana hasla</string>
+    <string name="title_activity_zmiana_email">Zmiana e-mail</string>
+    <string name="title_activity_lista_uzytkownikow">ListaUzytkownikow</string>
+    <string name="title_activity_lista_graczy">ListaGraczy</string>
+    <string name="title_activity_wiadomosci">Wiadomosci</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_roamowa">Roamowa</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Aktualnosci"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal"
+        android:onClick="news"
+        android:background="@drawable/button_glowna"
+        android:drawableLeft="@drawable/button_news_icon_left"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="@drawable/text_color"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Graj"
+        android:id="@+id/button7"
+        android:layout_gravity="center_horizontal"
+        android:onClick="gra"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/button_glowna"
+        android:drawableLeft="@drawable/button_graj_icon_left"
+        android:textColor="@drawable/text_color"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ustawienia"
+        android:id="@+id/button8"
+        android:layout_gravity="center_horizontal"
+        android:onClick="ustawienia"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/button_glowna"
+        android:drawableLeft="@drawable/button_ustawienia_icon_left"
+        android:textColor="@drawable/text_color"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Wiadomości"
+        android:id="@+id/button20"
+        android:layout_gravity="center_horizontal"
+        android:onClick="wiadomosci"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/button_glowna"
+        android:drawableLeft="@drawable/button_wiadomosci_icon_left"
+        android:textColor="@drawable/text_color"/>
+</LinearLayout>
